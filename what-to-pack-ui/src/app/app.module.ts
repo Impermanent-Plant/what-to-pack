@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatePickerComponent } from './components/date-picker/date-picker.component';
+import { DatePickerTouchUIComponent } from './components/date-picker-touch-ui/date-picker-touch-ui.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    DatePickerComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DatePickerTouchUIComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
