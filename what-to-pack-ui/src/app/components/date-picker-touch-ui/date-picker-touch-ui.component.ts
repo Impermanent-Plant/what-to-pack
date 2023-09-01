@@ -9,7 +9,7 @@ import {MatNativeDateModule} from '@angular/material/core';
   templateUrl: './date-picker-touch-ui.component.html',
   styleUrls: ['./date-picker-touch-ui.component.sass'],
   standalone: true,
-    imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule],
+  imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule],
 })
 export class DatePickerTouchUIComponent {
 
