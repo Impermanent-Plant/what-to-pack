@@ -1,0 +1,95 @@
+{
+  "locationList": [
+  {
+      "id": 1,
+      "city": "New York",
+      "state": "New York",
+      "country": "United States",
+      "province": null,
+      "longitude": -74.006,
+      "latitude": 40.7128
+  },
+  {
+      "id": 2,
+      "city": "Los Angeles",
+      "state": "California",
+      "country": "United States",
+      "province": null,
+      "longitude": -118.2437,
+      "latitude": 34.0522
+  },
+  {
+      "id": 3,
+      "city": "London",
+      "state": null,
+      "country": "United Kingdom",
+      "province": null,
+      "longitude": -0.1276,
+      "latitude": 51.5072
+  },
+  {
+      "id": 4,
+      "city": "Paris",
+      "state": null,
+      "country": "France",
+      "province": null,
+      "longitude": 2.3522,
+      "latitude": 48.8566
+  },
+  {
+      "id": 5,
+      "city": "Tokyo",
+      "state": null,
+      "country": "Japan",
+      "province": null,
+      "longitude": 139.6917,
+      "latitude": 35.682839
+  },
+  {
+      "id": 6,
+      "city": "Seoul",
+      "state": null,
+      "country": "South Korea",
+      "province": null,
+      "longitude": 126.9780,
+      "latitude": 37.5665
+  },
+  {
+      "id": 7,
+      "city": "Jakarta",
+      "state": null,
+      "country": "Indonesia",
+      "province": null,
+      "longitude": 106.8272,
+      "latitude": -6.1751
+  },
+  {
+      "id": 8,
+      "city": "Manila",
+      "state": null,
+      "country": "Philippines",
+      "province": null,
+      "longitude": 120.9842,
+      "latitude": 14.5995
+  },
+  {
+      "id": 9,
+      "city": "Shanghai",
+      "state": null,
+      "country": "China",
+      "province": null,
+      "longitude": 121.4737,
+      "latitude": 31.2304
+  },
+  {
+      "id": 10,
+      "city": "Hong Kong",
+      "state": null,
+      "country": "Hong Kong",
+      "province": null,
+      "longitude": 114.1694,
+      "latitude": 22.3193
+  }
+]
+
+}

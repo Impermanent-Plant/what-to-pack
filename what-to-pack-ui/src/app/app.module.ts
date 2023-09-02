@@ -12,6 +12,7 @@ import {NgFor, AsyncPipe} from '@angular/common';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ReactiveFormsModule,
     NgFor,
     AsyncPipe,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
