@@ -1,10 +1,11 @@
 package org.impermanentplant.service;
 
 import org.impermanentplant.model.WeatherApiDaily;
+import org.impermanentplant.model.WeatherRequest;
 
 /**
- * Service to retrieve Weather Data from external API
+ * Service to retrieve historical weather data from external API
  */
 public interface HistoricalWeatherApiClientService {
-    WeatherApiDaily retrieveHistoricalWeather(double latitude, double longitude, String startDate, String endDate);
+    WeatherApiDaily retrieveHistoricalWeather(WeatherRequest weatherRequest);
 }

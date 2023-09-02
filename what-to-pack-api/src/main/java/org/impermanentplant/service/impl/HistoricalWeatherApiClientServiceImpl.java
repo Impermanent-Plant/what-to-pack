@@ -1,6 +1,7 @@
 package org.impermanentplant.service.impl;
 
 import org.impermanentplant.model.WeatherApiDaily;
+import org.impermanentplant.model.WeatherRequest;
 import org.impermanentplant.model.WeatherApiResponse;
 import org.impermanentplant.service.HistoricalWeatherApiClientService;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +10,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
- * Implementation of WeatherApiClientService to retrieve weather data from external API
+ * Implementation of WeatherApiClientService to retrieve historical weather data from external API
  */
 @Service
 public class HistoricalWeatherApiClientServiceImpl implements HistoricalWeatherApiClientService {
@@ -26,15 +27,16 @@ public class HistoricalWeatherApiClientServiceImpl implements HistoricalWeatherA
 
     /**
      * Retrieve weather data from API
-     * @param latitude Latitude of location
-     * @param longitude Longitude of location
-     * @param startDate Start date for weather
-     * @param endDate End date for weather
+     * @param weatherRequest request parameters for API call
      * @return An object containing weather data for each day from startDate to endDate
      */
-    public WeatherApiDaily retrieveHistoricalWeather(double latitude, double longitude, String startDate, String endDate) {
+    public WeatherApiDaily retrieveHistoricalWeather(WeatherRequest weatherRequest) {
         Mono<WeatherApiResponse> weatherApiResponseMono = webClient.get().
-                uri(WEATHER_ENDPOINT_URI, latitude, longitude, startDate, endDate).
+                uri(WEATHER_ENDPOINT_URI,
+                        weatherRequest.getLatitude(),
+                        weatherRequest.getLongitude(),
+                        weatherRequest.getStartDate(),
+                        weatherRequest.getEndDate()).
                 retrieve().bodyToMono(WeatherApiResponse.class);
         return weatherApiResponseMono.block().getDaily();
     }
