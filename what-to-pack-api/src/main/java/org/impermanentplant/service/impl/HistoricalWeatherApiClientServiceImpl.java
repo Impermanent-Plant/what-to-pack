@@ -32,7 +32,7 @@ public class HistoricalWeatherApiClientServiceImpl implements HistoricalWeatherA
      * @param endDate End date for weather
      * @return An object containing weather data for each day from startDate to endDate
      */
-    private WeatherApiDaily retrieveDailyWeather(double latitude, double longitude, String startDate, String endDate) {
+    public WeatherApiDaily retrieveHistoricalWeather(double latitude, double longitude, String startDate, String endDate) {
         Mono<WeatherApiResponse> weatherApiResponseMono = webClient.get().
                 uri(WEATHER_ENDPOINT_URI, latitude, longitude, startDate, endDate).
                 retrieve().bodyToMono(WeatherApiResponse.class);
