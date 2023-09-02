@@ -15,9 +15,9 @@ public class WeatherApiDaily {
     @JsonProperty("time")
     private List<String> times;
     @JsonProperty("temperature_2m_max")
-    private List<String> temperatureMaxs;
+    private List<String> maxTemperatures;
     @JsonProperty("temperature_2m_min")
-    private List<String> temperatureMins;
+    private List<String> meanTemperatures;
     @JsonProperty("temperature_2m_mean")
-    private List<String> temperatureMeans;
+    private List<String> minTemperatures;
 }
